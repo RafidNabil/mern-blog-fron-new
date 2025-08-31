@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revision Blog</title>
+    <script>
+      // Prevent flash of unstyled content by setting theme before page loads
+      (function() {
+        const savedTheme = localStorage.getItem('theme-preference');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const theme = savedTheme || (prefersDark ? 'dark' : 'dark'); // Default to dark
+        document.documentElement.setAttribute('data-joy-color-scheme', theme);
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-DZvENXAN.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-2d6kTBOk.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
