@@ -101,7 +101,7 @@ export default function CreateBlogPost() {
 
             if (response.ok) {
                 const result = await response.json();
-                success(result.imageUrl);
+                success(result.location);
             } else {
                 failure('Error uploading image');
             }
@@ -113,13 +113,11 @@ export default function CreateBlogPost() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch(`${BACKEND_URL}/api/posts`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
+            const response = await fetch(`${BACKEND_URL}/api/create-blog`, {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(formData),
+});
 
             if (response.ok) {
                 const result = await response.json();
