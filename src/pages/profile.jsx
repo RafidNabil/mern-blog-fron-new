@@ -180,6 +180,7 @@ function Profile() {
                                         variant="solid"
                                         color="danger"
 {/*                                         onClick={() => handleDeletePost(post._id)} */}
+                                        onClick={}
                                         sx={{ flex: 1 }}
                                     >
                                         Delete
