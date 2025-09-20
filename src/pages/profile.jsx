@@ -179,7 +179,7 @@ function Profile() {
                                         startDecorator={<Delete />}
                                         variant="solid"
                                         color="danger"
-                                        onClick={() => handleDeletePost(post._id)}
+{/*                                         onClick={() => handleDeletePost(post._id)} */}
                                         sx={{ flex: 1 }}
                                     >
                                         Delete
